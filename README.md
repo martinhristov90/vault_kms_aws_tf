@@ -1,4 +1,4 @@
-### This is a refactored version of [this](https://github.com/hashicorp/vault-guides/tree/master/operations/aws-kms-unseal/terraform-aws)
+### This repository is a refactored version of [this](https://github.com/hashicorp/vault-guides/tree/master/operations/aws-kms-unseal/terraform-aws) guide
 
 All credits go to the author of the guide mentioned above. 
 
