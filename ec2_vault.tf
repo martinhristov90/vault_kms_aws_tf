@@ -25,9 +25,11 @@ resource "aws_instance" "vault" {
   subnet_id     = aws_subnet.public_subnet.id         # Subnet for the EC2 
   key_name      = aws_key_pair.vault-ssh-key.key_name # Waiting on the key to be created first
 
-  security_groups = [
-    aws_security_group.vault.id,
-  ]
+  #security_groups = [
+  #  aws_security_group.vault.id,
+  #]
+
+  vpc_security_group_ids = [aws_security_group.vault.id] # Should be this when created in different that default VPC
 
   associate_public_ip_address = true
   ebs_optimized               = false
